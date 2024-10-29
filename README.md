@@ -38,6 +38,7 @@ This is a client library for handling requests from the user and passing it over
 
 ## Directory Structure
 
+```
 Video-Translation-Simulator/
 ├── cmd/
 │   ├── server/
@@ -54,6 +55,7 @@ Video-Translation-Simulator/
 ├── go.mod // dependency management
 ├── go.sum
 └── README.md
+```
 
 ## Prerequisites
 
