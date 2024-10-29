@@ -12,7 +12,7 @@ This is a client library for handling requests from the user and passing it over
   - It maintains state of the job through response from previous requests, such that,
     even when the user keeps trying to fetch status, the service doesnt hang and sends the previous response itself
   - It uses mutex locks to make sure shared variables are accessed and modified properly by concurrent requests
-  - Adaptive Retry : A retry mechanism based on the previously observed delay from server, but since in this simulation
+  - It uses adaptive retry, a mechanism based on the previously observed delay from server, but since in this simulation
           we have a fixed amount of delay, we wouldnt need this.
 
   How it helps the users : 
@@ -21,6 +21,11 @@ This is a client library for handling requests from the user and passing it over
 
   How it helps the 3rd party dev using this library : 
   - Simplified Client-Side Logic: Developers interact with a straightforward API/REST without worrying about the underlying polling mechanics.
+
+  Why Golang :
+  - It is strongly typed and handles concurrent requests really well through go routines and channels.
+  - Provides thread safety and performance enhancements compared to other languages
+  - Could extend this to the server side to use preforking for making use of all CPU cores for processing.
 
   Stretch Goal implementaions (Not necessary for this simulation, Sample code is present at end of file) :
   A token bucket based rate limiter :
