@@ -36,6 +36,24 @@ This is a client library for handling requests from the user and passing it over
       - Explicitly prioritize the requests as they come in (This is handled through go routines by default, but we
           may need a request queue to do some processing explicitly)
 
+## Directory Structure
+
+Video-Translation-Simulator/
+├── cmd/
+│   ├── server/
+│   │   └── main.go // entry point for server to start receiving requests
+│   └── client/
+│       └── main.go // entry point for server to start receiving requests from user
+├── pkg/
+│   ├── server/
+│   │   └── server.go // server code 
+│   └── client/
+│       └── client.go // client code
+|       └── integration_test.go // client tests
+├── Makefile
+├── go.mod // dependency management
+├── go.sum
+└── README.md
 
 ## Prerequisites
 
