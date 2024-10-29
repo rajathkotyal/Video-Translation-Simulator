@@ -53,7 +53,7 @@ This is a client library for handling requests from the user and passing it over
 2. **Start the Server :**
 
   ```
-  make start-server DELAY=20 ERROR_RATE=25
+  make server DELAY=20 ERROR_RATE=25
   ```
   - --delay : Sets the number of seconds it would take for a response to be received as "completed" or "error"
   - --error: Sets the probabilty % of server responding with an "error" instead of "completed"
@@ -81,6 +81,8 @@ This is a client library for handling requests from the user and passing it over
   ```
   http://localhost:9090/status
   ```
+
+Use this video link for a walkthrough and running code demo if you face unresolvable errors during the above steps : https://drive.google.com/file/d/1eNN-V24sC5zXEoKMEryFRMLT0sfk8u-M/view?usp=sharing
 
 Thank you! 
 
